@@ -1,0 +1,88 @@
+* {
+	margin: 1;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header, footer, nav{
+    background-color: rgb(6, 7, 30);
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header, main {
+	margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+nav {
+    background-color: rgb(109, 111, 113);
+    margin: 0 auto;
+	max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .8rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+nav .active{
+    background-color: rgba(0,0,0,0.3);
+}
+
+section{
+    border: 1px solid #415541;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+h2{
+    background-color: #547489;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.copyupdated {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+
+#gtFlag {
+    width: 50px;
+    height: 30px;
+}
