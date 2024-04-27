@@ -1,18 +1,22 @@
-@media (min-width: 640px) {
-	nav ul {
+@media only screen and (min-width: 640px) {
+    nav ul {
 		display: flex;
 	}
 	nav ul li {
 		flex: 1 1 100%;
 	}
 
-    .class {
+    .card {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card section:nth-child(1) {
+        grid-column: span 2;
     }
 
-    .class section{
-        box-shadow: 1px 1px 10px black;
+    footer .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
