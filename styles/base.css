@@ -92,10 +92,21 @@ h3 {
 
 .class {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
 
 .class section{
     box-shadow: 1px 1px 10px black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
 }

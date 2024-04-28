@@ -10,7 +10,7 @@ header, main, footer {
     background-color: #e6f2ff;
 }
 
-main {
+main h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
