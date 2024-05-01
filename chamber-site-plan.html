@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Chamber of Commerce Site Plan</title>
-    <meta name="description" content="The Chamber of Commerce Site Plan"> 
+    <title>"Lucia Robles - WDD 230 - The Chamber of Commerce Site Plan"</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development"> 
     <meta name="author" content="Imelda Lucia Robles">
     <link rel="stylesheet" href="styles/chamber-site-plan.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Robot:wght@300;500&display=swap" rel="stylesheet">
+ </head>
 
-
-    <body>
-        <header>
-            <h1>Quetzaltenango Chamber of Commerce Site Plan</h1>
-            <h2>Lucia Robles</h2>
-            <h2>WDD 230</h2>
-        </header>
-
-        <main>
+<body>
+    <header>
+      <img src="images/profile.jpg" alt="Lucia Robles Profile" width="75" height="100">
+      <h1>Lucia Robles</h1>
+    </header>
+    
+    <nav class="navigation">
+      <a href="index.html" title="Home" class="active">Home</a>
+      <a href="#" title="">Chamber</a>
+      <a href="chamber-site-plan.html" title="">Site Plan</a>
+      <a href="#" title="">Form</a>
+    </nav>
+      
+    <main>
 
         <hr />
-        <h2>Overview</h2>
+        <h2>Quetzaltenango Chamber of Commerce Site Plan</h2>
         <h3>Purpose</h3>
         <p>We are a business organization that leads the defense, representation and promotion of trade; seeking all companies in Quetzaltenango to be part of this institution.
            We believe in our institutional principles, free enterprise and the rule of law; We strive to adequately and timely comply with all the commitments we assume in order to effectively satisfy the needs of our clients.</p>
@@ -106,6 +117,16 @@
                     <img src="images/home-wireframe.jpg" alt="home page wireframe large">
               <p>Wireframe Mobile</p>
                     <img src="images/home-wireframe2.jpg" alt="home page wireframe mobile">
-        </main>
+    </main>
+
+    <footer>
+          <div class="copyupdated">
+              <p><span id="currentYear"></span> Lucia Robles | Guatemala</p>
+              <img id="gtFlag" src="images/guatemala.webp" alt="Guatemala Flag" loading="lazy"/>
+              <p><span id="lastModified"></span></p>
+          </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+        
 </body>
 </html>

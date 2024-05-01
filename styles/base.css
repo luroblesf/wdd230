@@ -1,5 +1,5 @@
 * {
-	margin: 1;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
     
@@ -12,13 +12,13 @@ body {
 }
 
 header, footer, nav{
-    background-color: rgb(6, 7, 30);
+    background-color: rgb(10, 10, 61);
     color: white;
     display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 253, 253, 0.1);
 }
 
 header, main {
@@ -28,9 +28,11 @@ header, main {
 h1 {
     font-size: 2rem;
     font-weight: 100;
+    margin: 25px;
 }
 
-nav {
+
+.navigation {
     background-color: rgb(109, 111, 113);
     margin: 0 auto;
 	max-width: 800px;
@@ -41,18 +43,19 @@ nav ul {
 }
 
 nav a{
-    display: block;
+    display:grid;
     color: white;
     text-align: center;
     padding: .8rem;
     text-decoration: none;
+
 }
 
-nav a:hover{
-    background-color: rgba(255,255,255,0.2);
+.navigation a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-nav .active{
+.navigation .active{
     background-color: rgba(0,0,0,0.3);
 }
 
@@ -63,7 +66,6 @@ nav .active{
     overflow: hidden;
     margin: 2rem 0;
 }
-
 
 h2{
     background-color: #547489;
@@ -109,4 +111,10 @@ main {
 section {
     padding: 1rem;
     background-color: #fff;
+}
+
+img {
+    display: block;
+    margin: 0;
+    max-width: 300px;
 }
