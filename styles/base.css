@@ -127,3 +127,22 @@ img {
     max-width: 300px;
     filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
 }
+
+#menu {
+    top: 0.25em;
+    right: 0.25em; 
+    color: rgb(6, 6, 6);
+    text-align: center;
+    width: 40px;
+    height: auto;
+}
+
+#menu::before {
+    font-size: 2rem;
+    content: "☰";
+}
+
+#menu.open::before {
+    font-size: 1.5rem;
+    content: "X";
+}
