@@ -1,16 +1,15 @@
-@media (min-width: 640px) {
-    nav {
-		display: flex;
-	}
-	nav a{
-		text-align: center;
-	}
-
-    nav li {
+@media only screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation li {
         display: block;
         flex: 1 1 100%;
     }
-
+ 
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -18,43 +17,9 @@
     .card section:nth-child(1) {
         grid-column: span 2;
     }
-    
-
     footer .footer-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
-    @media (min-width: 37.5em) {
-        h1 {
-            font-size: 2.5rem;
-            margin-left: 0;
-            text-align: center;
-        }
-    
-        h2 {
-            font-size: 2rem;
-            text-align: center;
-        }
-    
-        #menu {
-            display: none; /* hide hamburger button */
-        }
-    
-        .navigation {
-            flex-direction: row;
-        }
-    
-        .navigation a {
-            display: block;
-            flex: 1 1 100%;
-        }
-    
-        .stuff {
-            margin: 1rem auto;
-        }
-    }
-    
-
 }
