@@ -47,6 +47,7 @@ img {
   display: block;
   margin: 0;
   max-width: 300px;
+  filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
 }
 
 main img{
@@ -69,13 +70,13 @@ hr {
 }
 
 header, footer, nav{
-  background-color: rgb(10, 10, 61);
+  background-color: rgb(52, 87, 135);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border: 1px solid rgba(255, 253, 253, 0.1); 
 }
 
 p {
@@ -101,10 +102,12 @@ h1 {
 .colors th {
   background-color: #999;
 }
+
 .colors td{
   width: 25%;
   height: 3em;
 }
+
 .primary {
   background-color: var(--primary-color);
 }
@@ -127,12 +130,13 @@ p.colored {
 }
 
 .navigation {
-  background-color: rgb(109, 111, 113);
+  background-color: rgb(103, 99, 99);
+  font-size: x-large;
+  color: white;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 5000px;
+  max-height: 30px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  
 }
 
 nav ul {
@@ -141,18 +145,18 @@ nav ul {
 
 nav a{
   display:grid;
-  color: white;
+  color: rgb(255, 253, 253);
   text-align: center;
   padding: .8rem;
   text-decoration: none;
 }
 
 .navigation a:hover{
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navigation .active{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .copyupdated {
