@@ -11,13 +11,23 @@ body {
     
 }
 
-header, footer, nav{
-    background-color: rgb(10, 10, 61);
+header, footer{
+    background-color: rgb(52, 87, 135);
     color: white;
     display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 40px;
+	border: 1px solid rgba(255, 253, 253, 0.1);
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    color: rgb(203, 71, 71);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
 	border: 1px solid rgba(255, 253, 253, 0.1);
 }
 
@@ -33,30 +43,32 @@ h1 {
 
 
 .navigation {
-    background-color: rgb(109, 111, 113);
+    background-color: rgb(0, 0, 0);
+    font-size: x-large;
+    color: white;
     margin: 0 auto;
-	max-width: 800px;
+	max-width: 5000px;
+    max-height: 30px
 }
 
 nav ul {
     list-style-type: none
 }
 
-nav a{
+.navigation a{
     display:grid;
-    color: white;
+    color: rgb(255, 253, 253);
     text-align: center;
     padding: .8rem;
     text-decoration: none;
-
 }
 
 .navigation a:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navigation .active{
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card {
@@ -68,11 +80,11 @@ nav a{
 }
 
 h2{
-    background-color: #547489;
+    background-color: rgb(52, 87, 135);;
     color: #ffffff;
     display: block;
     text-align: center;
-    padding: .75rem 0;
+    padding: .15rem 0;
 }
 
 h3, h4 {
@@ -94,12 +106,13 @@ h3, h4 {
 
 .class {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     column-gap: 10px;
 }
 
 .class section{
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    
 }
 
 main {
@@ -108,13 +121,9 @@ main {
     grid-gap: 1rem;
 }
 
-section {
-    padding: 1rem;
-    background-color: #fff;
-}
-
 img {
     display: block;
     margin: 0;
     max-width: 300px;
+    filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
 }

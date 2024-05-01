@@ -13,7 +13,7 @@
 
     .card {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .card section:nth-child(1) {
         grid-column: span 2;
@@ -26,6 +26,11 @@
         justify-content: space-between;
     }
 
-    
+    h2{
+    background-color: rgb(52, 87, 135);;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
 
 }
