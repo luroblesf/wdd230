@@ -7,7 +7,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 400px;
     
 }
 
@@ -21,10 +21,8 @@ header, footer{
 	border: 1px solid rgba(255, 253, 253, 0.1);
 }
 
-nav{
+.navigation{
     background-color: rgb(255, 255, 255);
-    color: rgb(203, 71, 71);
-    display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 40px;
@@ -38,9 +36,13 @@ header, main {
 h1 {
     font-size: 2rem;
     font-weight: 100;
-    margin: 25px;
+    margin: 50px;
 }
 
+.nav li {
+    font-size: large;
+    color: black;
+}
 
 .navigation {
     background-color: rgb(103, 99, 99);
@@ -51,12 +53,12 @@ h1 {
     max-height: 30px
 }
 
-nav ul {
+.nav ul {
     list-style-type: none
 }
 
 .navigation a{
-    display:grid;
+    display: none;
     color: rgb(255, 253, 253);
     text-align: center;
     padding: .8rem;
@@ -71,7 +73,7 @@ nav ul {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.card {
+.card1 {
     border: 1px solid #415541;
     background-color: #ffffff;
     border-radius: 15px;
@@ -79,16 +81,21 @@ nav ul {
     margin: 2rem 0;
 }
 
-h2{
-    background-color: rgb(52, 87, 135);;
-    color: #ffffff;
-    display: block;
-    text-align: center;
-    padding: .15rem 0;
+.card2 {
+    border: 1px solid #415541;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 2rem 0;
 }
 
-h3, h4 {
-    padding: 10px;
+
+div h3,h4, li {
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 0.5rem;
 }
 
 .copyupdated {
@@ -104,15 +111,17 @@ h3, h4 {
     height: 30px;
 }
 
-.class {
+.class1 {
+    background-color: #415541;
     display: grid;
     grid-template-columns: 1fr ;
     column-gap: 10px;
 }
 
-.class section{
-    box-shadow: 1px 1px 10px rgb(0, 0, 0);
-    
+.class2 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 10px;
 }
 
 main {
@@ -128,21 +137,33 @@ img {
     filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
 }
 
+/* Hamburguer menu*/
+
 #menu {
-    top: 0.25em;
-    right: 0.25em; 
-    color: rgb(6, 6, 6);
-    text-align: center;
-    width: 40px;
-    height: auto;
+	font-size: 2.5rem;
+	border: 0;
+	background: none;
+	color: #ffffff;
+ 	position: absolute;
+	top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
-    font-size: 2rem;
-    content: "☰";
+	content: "☰";
 }
 
 #menu.open::before {
-    font-size: 1.5rem;
-    content: "X";
+	content: "❎";
+}
+
+/* Dark mode */
+
+#mode {
+	position: absolute;
+	top: 5rem;
+    right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
