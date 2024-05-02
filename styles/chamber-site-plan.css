@@ -87,11 +87,11 @@ p {
 }
 
 h1 {
-  font-size:2rem;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 0.3px;
+  padding: 18px;
+  margin: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin: 25px;
 }
 
 .colors {
