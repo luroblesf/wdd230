@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+    #hero {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
