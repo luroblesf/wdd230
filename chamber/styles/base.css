@@ -281,3 +281,26 @@ footer a:hover {
     align-items: center;
     gap: 80px; 
 }
+
+/* Hamburguer Menu */
+
+#menu {
+	font-size: 2.5rem;
+	border: 0;
+	background: none;
+	color: #134266;
+ 	position: absolute;
+	top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+
+
