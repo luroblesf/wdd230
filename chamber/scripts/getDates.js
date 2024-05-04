@@ -9,7 +9,7 @@ document.getElementById("currentYear").innerHTML = getCopyrightYear();
 /* Last modified date of the page */
 
 function getLastModified() {
-    const lastModified = new Date(document.lastModified).toGMTString();
+    const lastModified = new Date(document.lastModified);
     return `Last Modified: ${lastModified}`;
 }
 document.getElementById("lastModified").innerHTML = getLastModified();
