@@ -5,7 +5,13 @@ const list = document.querySelector('#list');
 
 let chaptersArray = getChapterList() || [];
 
-button.addEventListener('click', () => {
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+  });
+
+
+  button.addEventListener('click', () => {
     if (input.value != '') {
         displayList(input.value);
         chaptersArray.push(input.value);
@@ -15,9 +21,6 @@ button.addEventListener('click', () => {
     }
 });
 
-chaptersArray.forEach(chapter => {
-    displayList(chapter);
-  });
 
   function displayList(item) {
     let li = document.createElement('li');
