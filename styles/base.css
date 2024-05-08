@@ -138,6 +138,13 @@ img {
     filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
 }
 
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+
 /* Hamburguer menu*/
 
 #menu {
