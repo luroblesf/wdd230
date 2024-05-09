@@ -38,6 +38,17 @@
           <a href="#" title="">Form</a>
     </nav>
 
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/hero-large.webp" alt="Quetzaltenango" width="960" height="300">
+        </picture>
+
+        <div class="herolabel">
+			<p>Quetzaltenango Temple</p>
+		</div>
+    </div>
 
     <div id="mode">🕶️</div>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -66,27 +77,42 @@
                 <li>Week 6:<a href=""></a></li>
             </ul>
             </nav>
-    
         </section>
             
         <section class="card2">
             <h2>Information</h2>
-            <div>
-                <h3>Quetzaltenango, Guatemala</h3>
-                <h4>Number of Visits: <span class="visits"></span></h4></div>
+            
+                <div class="weather-info">
+                        <div id="weather">
+                            <p id="location"></p>
+                            <div class="temp-area">
+                                <figure id="weather-description"></figure>
+                            </div>
+                            <div class="alt-weather">
+                                <div class="weather-box">Feels Like:  <span id="feels-like"></span></div>
+                                <div class="weather-box">Humidity:  <span id="humidity"></span></div>
+                                <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
+                            </div>    
+                        </div>
+                </div>
+                    <br>
+                    
+                <h4>Visits Count: <span class="visits"></span></h4>
         </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15426.086550445372!2d-91.53055595000001!3d14.852081900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1715218242201!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-     </main>
+    </main>
 
     <footer>
         <div class="copyupdated">
             <p><span id="currentYear"></span> Lucia Robles | Guatemala</p>
-            <img id="gtFlag" src="images/guatemala.webp" alt="Guatemala Flag" loading="lazy"/>
+            <img id="gtFlag" src="images/guatemala.webp" alt="Guatemala Flag" loading="lazy">
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu-hamburger.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

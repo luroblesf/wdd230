@@ -7,8 +7,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400px;
-    
+    font-weight: 400;
 }
 
 header, footer{
@@ -35,7 +34,6 @@ header, main {
 
 h1 {
     font-size: 2rem;
-    font-weight: 0.3px;
     padding: 18px;
     margin: 0;
 }
@@ -85,13 +83,32 @@ h1 {
 .card2 {
     border: 1px solid #415541;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     margin: 2rem 0;
+    text-align: center;
+    font-size: large;
+}
+.card3 {
+    border: 1px solid #415541;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: large;
 }
 
+div h3 {
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 0.5rem;
+    text-align: center;
+}
 
-div h3,h4, li {
+div h4, li {
     background-color: white;
     color: black;
     font-size: 1.3rem;
@@ -125,23 +142,21 @@ div h3,h4, li {
     column-gap: 10px;
 }
 
+
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
 
 img {
-    display: block;
-    margin: 0;
-    max-width: 300px;
-    filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.5));
+    overflow: clip;
 }
 
-#visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
+.visits {
+	color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 
 
@@ -175,3 +190,91 @@ img {
 	cursor: pointer;
 	font-size: 2rem;
 }
+
+/* Weather */
+#weather {
+    width: 100%;
+    border-color: #000000;
+    margin-top: 50px;
+}
+#weather h3, #five-day h3 {
+    margin: 0;
+    padding: 5px;
+    color: #000000;
+    text-align: center;
+}
+#weather p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#weather figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.temp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#current-temp {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.temp-area figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+#weather-description {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.alt-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 2px;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.weather-box span {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Hero*/
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+	position: absolute;
+	top: 430px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 0.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
