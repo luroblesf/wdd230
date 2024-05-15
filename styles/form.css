@@ -1,0 +1,88 @@
+:root {
+    --font-color: #555;
+    --input-border-color: #999;
+    --invalid-color: rgb(57, 83, 235);
+    --valid-color: limegreen;
+}
+form {
+    background-color: var(--section-bg);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    padding-block: 1em;
+    padding-inline: 1em;
+}
+form label {
+    display: block;
+    padding-block-start: 2rem;
+}
+
+form label input {
+    color: var(--font-color);
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 40rem;
+    border: solid 1px var(--input-border-color);
+    border-radius: .5rem;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#000000, #000000);
+    color: #fff;
+    border-radius:  6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1 px 1px 4px #767575
+}
+
+#page-rating  {
+    color: white;
+    width: 250px;
+}
+
+#rating-values {
+    display: flex;
+    width: 90%;
+    max-width: 100rem;
+    margin-inline-start: 1.5rem;
+}
+
+#rating-values option{
+    flex: 1 50 auto;
+}
+
+form label input.notsame:required {
+    background-color: rgba(248, 153, 118, 0.723);
+    border-left: .5rem solid var(--invalid-color);
+}
+.wf1 legend {
+    color: #334ba9;
+    font-size: large;
+    padding: 0.3rem;
+}
+
+form label input:required:not([type="range"]) {
+    border-bottom: solid 8px var(--invalid-color);
+}
+
+form label input:required:valid:not([type="range"]) {
+    border-bottom: solid 8px var(--valid-color);
+}
+
+.success h1 {
+    text-align: center;
+    color: #601360b5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+    form {
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+}
