@@ -29,7 +29,7 @@ form label input {
 
 input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#000000, #000000);
+    background-image: linear-gradient(#535151, #535151);
     color: #fff;
     border-radius:  6px;
     padding: .8rem;
