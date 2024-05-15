@@ -73,6 +73,10 @@ form label input:required:valid:not([type="range"]) {
     border-bottom: solid 8px var(--valid-color);
 }
 
+.form-mode {
+    display: flex; 
+}
+
 .success h1 {
     text-align: center;
     color: #601360b5;
