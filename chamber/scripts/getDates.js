@@ -29,14 +29,15 @@ const form = document.querySelector("#form");
 const input = document.querySelector("#position");
 const output = document.querySelector("#submit");
 
-const re = /^[A-Za-z\d\-\s]{7,}$/;
+const re = /^[A-Za-z\-\s]{7,}$/;
 
 function testInfo(positionInput) {
   const ok = re.exec(positionInput.value);
 
-  output.textContent = ok
-    ? {onclick}
-    : `${positionInput.value} Title of position invalid`;
+  output.innerHTML= ok
+    ? `Correct` (location.href = "thankyou.html")
+
+    : `Title of position invalid`;
 }
 
 form.addEventListener("submit", (event) => {
