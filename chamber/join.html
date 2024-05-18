@@ -36,14 +36,14 @@
     <main>
             <div class="form-mode">
                 <div>
-                    <form method="get" action="thankyou.html" class="f1">
+                    <form method="get" action="thankyou.html" class="f1" id="form">
                         <fieldset>
                             <legend>Applicant Information</legend>
-                            <label>First Name* <input type="text" name="fname" required></label>
-                            <label>Last Name* <input type="text" name="lname" required></label>
-                            <label>Title of Position <input type="text" name="position" pattern="[a-zA-Z\- ]{7,}"></label>
+                            <label>First Name* <input type="text" name="fname" id="name" required></label>
+                            <label>Last Name* <input type="text" name="lname" id="last" required></label>
+                            <label>Title of Position <input type="text" name="position" id="position" placeholder="Minimum of 7 characters "></label>
                             <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" pattern="[a-zA-Z0-9._%+-]" title="Please enter a valid email address" required></label>
-                            <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                            <label>Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
                         </fieldset>
             
                         <fieldset>
@@ -56,15 +56,15 @@
         
                         <fieldset>
                             <legend>Business/Organization</legend>
-                            <label>Business/Organization's Name* <input type="text" name="company" required></label>
+                            <label>Business/Organization's Name* <input type="text" name="company" id="organization" required></label>
                             <label class="f2">Description <textarea id="description" name="description" ></textarea></label>  
                      
                         </fieldset>
 
                         <input type="hidden" name="timeStamp" id="datetime">
-                        <input type="submit" value="Send">
-                        
+                        <button type="submit" id="submit" onclick="location.href='https://luroblesf.github.io/wdd230/chamber/thankyou.html'">Send</button>
                     </form>
+                    <p id="output"></p>
                 </div>
 
             <div>

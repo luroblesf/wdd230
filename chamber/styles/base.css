@@ -558,7 +558,7 @@ label {
     margin-right: 6px;
 }
 
-.f1 input[type="submit"]{
+.f1 button[type="submit"]{
     border: none;
     background-image: linear-gradient(#083f51, #083f51);
     color: #fff;
