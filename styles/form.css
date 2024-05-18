@@ -1,7 +1,7 @@
 :root {
-    --font-color: #555;
+    --font-color: #424141;
     --input-border-color: #999;
-    --invalid-color: rgb(57, 83, 235);
+    --invalid-color:#334ba9;
     --valid-color: limegreen;
 }
 form {
@@ -60,7 +60,7 @@ form label input.notsame:required {
     border-left: .5rem solid var(--invalid-color);
 }
 .wf1 legend {
-    color: #334ba9;
+    color: var(--invalid-color);
     font-size: large;
     padding: 0.3rem;
 }
@@ -78,8 +78,8 @@ form label input:required:valid:not([type="range"]) {
 }
 
 .success h1 {
-    text-align: center;
-    color: #601360b5;
+    font-size: xx-large;
+    color: var(--font-color);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }

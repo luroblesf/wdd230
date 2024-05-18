@@ -23,3 +23,10 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });
+
+/* TimeStamp */
+
+var now = new Date();
+var datetime = now.toLocaleString();
+
+document.getElementById("datetime").innerHTML = datetime;

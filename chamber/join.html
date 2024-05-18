@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Quetzaltenango Chamber of Commerce"</title>
+    <meta name="description" content="Quetzaltenango Chamber of Commerce"> 
+    <meta name="author" content="Imelda Lucia Robles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Quetzaltenango - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://luroblesf.github.io/wdd230/chamber/images/xela.jpg">
+    <meta property="og:url" content="https://luroblesf.github.io/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body> 
+    <div id="content">
+
+    <header> 
+        <button id="menu"></button>
+         <nav class="navigation">  
+            <a href="index.html" title="Home">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <img class="logo" src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" width="300" height="150">
+
+    </header>
+    <h1>Join Us</h1>
+    <main>
+            <div class="form-mode">
+                <div>
+                    <form method="get" action="thankyou.html" class="f1">
+                        <fieldset>
+                            <legend>Applicant Information</legend>
+                            <label>First Name* <input type="text" name="fname" required></label>
+                            <label>Last Name* <input type="text" name="lname" required></label>
+                            <label>Title of Position <input type="text" name="position" pattern="[a-zA-Z\- ]{7,}" required></label>
+                            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" pattern="[a-zA-Z0-9._%+-]" title="Please enter a valid email address" required></label>
+                            <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend>Membership Levels</legend>
+                            <label><input type="radio" name="audience" value="no-membership">NP Membership</label>
+                            <label><input type="radio" name="audience" value="bronze-membership">Bronze Membership</label>
+                            <label><input type="radio" name="audience" value="silver-membership">Silver Membership</label>
+                            <label><input type="radio" name="audience" value="gold-membership">Gold Membership</label>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Business/Organization</legend>
+                            <label>Business/Organization's Name* <input type="text" name="company" required></label>
+                            <label class="f2">Description <textarea id="description" name="description" ></textarea></label>  
+                     
+                        </fieldset>
+
+                        <input type="hidden" name="timeStamp" id="datetime">
+                        <input type="submit" value="Join">
+                        
+                    </form>
+                </div>
+
+            <div>
+                <div class="list">
+                        <table class="two">
+                            <thead>
+                                <tr>
+                                    <th>Membership Levels</th>
+                                    <th>Cost</th>
+                                    <th>Benefit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NP MEMBERSHIP</td>
+                                    <td>No fee</td>
+                                    <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
+                                </tr>
+                                <tr>
+                                    <td>BRONZE</td>
+                                    <td>$50</td>
+                                    <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
+                                </tr>
+                                <tr>
+                                    <td>SILVER</td>
+                                    <td>$100</td>
+                                    <td>• Semi-annual training<br>• Advertising on social networks<br>• 15% discount on tickets to events</td>
+                                </tr>   
+                                <tr>
+                                    <td>GOLD</td>
+                                    <td>$175</td>
+                                    <td>• Quarterly training<br>• Advertising on social networks and chamber of commerce events<br>• 20% discount on tickets to events</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <picture class="img3">
+                            <source srcset="images/join-small.webp" media="(max-width: 323px)">
+                            <source srcset="images/join-medium.webp" media="(max-width: 485px)">
+                            <img src="images/join.webp" alt="Join Us" loading="lazy" width="970" height="780">
+                        </picture>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="copyupdated">
+            <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
+            <p><span id="lastModified"></span></p>
+            <p><a href="#">Contact Us</a></p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitterx-icon.png" alt="TwitterX icon" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+
+    </div>  
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/numberVisits.js"></script>
+</body>
+</html>

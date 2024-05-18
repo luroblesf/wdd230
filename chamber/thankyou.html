@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Quetzaltenango Chamber of Commerce"</title>
+    <meta name="description" content="Quetzaltenango Chamber of Commerce"> 
+    <meta name="author" content="Imelda Lucia Robles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Quetzaltenango - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://luroblesf.github.io/wdd230/chamber/images/xela.jpg">
+    <meta property="og:url" content="https://luroblesf.github.io/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body> 
+    <div id="content">
+
+    <header> 
+        <button id="menu"></button>
+         <nav class="navigation">  
+            <a href="index.html" title="Home">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <img class="logo" src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" width="300" height="150">
+
+    </header>
+
+    <main class="thank-you">
+        <div>
+            <p>Thanks for joining us!</p>
+            <p>Your information has been entered successfull</p>
+
+            <picture class="img4">
+                <source srcset="images/thanks-small.webp" media="(max-width: 323px)">
+                <source srcset="images/thanks-medium.webp" media="(max-width: 485px)">
+                <img src="images/thanks.webp" alt="Thank You" loading="lazy" width="612" height="408">
+            </picture>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="copyupdated">
+            <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
+            <p><span id="lastModified"></span></p>
+            <p><a href="#">Contact Us</a></p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitterx-icon.png" alt="TwitterX icon" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+
+    </div>  
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/numberVisits.js"></script>
+</body>
+</html>
