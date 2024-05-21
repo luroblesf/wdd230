@@ -1,0 +1,30 @@
+[
+    {
+        "familyName": "Reynolds",
+        "dateMoved": "08/25/2023",
+        "numberRecords": 3,
+        "bishopVisit": "Yes",
+        "members": [
+            {
+                 "name": "Joseph",
+                 "gender": "M",
+                 "birthdate": "03/15/1998"
+                 },
+            {
+                "name": "Stephanie",
+                "gender": "F",
+                "birthdate": "10/07/2000"
+            },
+            {
+                "name": "Michael",
+                "gender": "M",
+                "birthdate": "06/02/2005"
+            },
+            {
+                "name": "Jennifer",
+                "gender": "F",
+                "birthdate": "09/08/2008"
+            }
+        ]
+    }
+]
