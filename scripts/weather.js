@@ -1,6 +1,6 @@
-const apiKey = "0aec6412eede92415f476e7030db63f4";
-const lat = 14.83472 ;
-const lon = -91.51806;
+const apiKey = "f4619f75c2d45cc1bfe1a55992e82aaa";
+const lat = 14.844548768365765;
+const lon = -91.527263355249;
 
 const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
