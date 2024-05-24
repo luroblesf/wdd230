@@ -6,7 +6,7 @@
       "phone": "(502)2381-2381",
       "website": "https://www.agrocentro.com",
       "image": "images/agro-centro.webp",
-      "membershipLevel": "images/gold.png"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Disagro Guatemala S.A.",
@@ -14,7 +14,7 @@
       "phone": "(502) 2474-9300",
       "website": "https://www.disagro.com",
       "image": "images/disagro.webp",
-      "membershipLevel": "images/silver.png"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Lucalza",
@@ -22,7 +22,7 @@
       "phone": "(502)) 6628-9100",
       "website": "https://www.lucalza.com",
       "image": "images/lucalza.webp",
-      "membershipLevel": "images/bronze.png"
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Fundap",
@@ -30,7 +30,7 @@
       "phone": " (502) 7794-2300",
       "website": "https://www.fundap.com.gt/",
       "image": "images/fundap.webp",
-      "membershipLevel": "images/np.png"
+      "membershipLevel": "Non-Profit"
     },
     {
       "name": "RC Quimica",
@@ -38,7 +38,7 @@
       "phone": "(502) 2381-0202",
       "website": "https://www.rcquimica.com",
       "image": "images/rc-quimica.webp",
-      "membershipLevel": "images/gold.png"
+      "membershipLevel": "Gold"
     },
     {
       "name": "Banco Industrial A.A.",
@@ -46,7 +46,7 @@
       "phone": "(502) 2420 3000",
       "website": "https://www.corporacionbi.com/gt/bancoindustrial/",
       "image": "images/bi.webp",
-      "membershipLevel": "images/gold.png"
+      "membershipLevel": "Gold"
     },
     {
       "name": "Incad",
@@ -54,7 +54,7 @@
       "phone": "(502) 2475-5136",
       "website": "https://www.facebook.com/zapateriasDilson/",
       "image": "images/incad.webp",
-      "membershipLevel": "images/silver.png"
+      "membershipLevel": "Bronze"
     }
   ]
 }
