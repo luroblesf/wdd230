@@ -1,60 +1,20 @@
 {
   "members": [
     {
-      "name": "Agrocentro S.A.",
+      "company": "Agrocentro S.A.",
       "address": "14 calle 3-01 zona 9",
       "phone": "(502)2381-2381",
       "website": "https://www.agrocentro.com",
-      "image": "images/agro-centro.webp",
-      "membershipLevel": "Silver"
+      "logo": "https://luroblesf.github.io/wdd230/chamber/images/agrocentro.webp",
+      "membership": "Silver"
     },
     {
       "name": "Disagro Guatemala S.A.",
       "address": "Anillo Periferico 17-36 zona 11",
       "phone": "(502) 2474-9300",
       "website": "https://www.disagro.com",
-      "image": "images/disagro.webp",
-      "membershipLevel": "Silver"
-    },
-    {
-      "name": "Lucalza",
-      "address": "Kilómetro 27 carretera al Pacífico, Amatitlán",
-      "phone": "(502)) 6628-9100",
-      "website": "https://www.lucalza.com",
-      "image": "images/lucalza.webp",
-      "membershipLevel": "Bronze"
-    },
-    {
-      "name": "Fundap",
-      "address": "3ra. Calle 15-16, zona 1",
-      "phone": " (502) 7794-2300",
-      "website": "https://www.fundap.com.gt/",
-      "image": "images/fundap.webp",
-      "membershipLevel": "Non-Profit"
-    },
-    {
-      "name": "RC Quimica",
-      "address": "4a. avenida 0-55 zona 8 de Mixco, sector B-5, Ciudad San Cristobal",
-      "phone": "(502) 2381-0202",
-      "website": "https://www.rcquimica.com",
-      "image": "images/rc-quimica.webp",
-      "membershipLevel": "Gold"
-    },
-    {
-      "name": "Banco Industrial A.A.",
-      "address": "Vía 5, 5-34 zona 4 Centro Financiero Torre 3 Nivel 4",
-      "phone": "(502) 2420 3000",
-      "website": "https://www.corporacionbi.com/gt/bancoindustrial/",
-      "image": "images/bi.webp",
-      "membershipLevel": "Gold"
-    },
-    {
-      "name": "Incad",
-      "address": "7a. calle 11-79 zona 7, colonia Quinta Samayoa",
-      "phone": "(502) 2475-5136",
-      "website": "https://www.facebook.com/zapateriasDilson/",
-      "image": "images/incad.webp",
-      "membershipLevel": "Bronze"
+      "imageurl": "https://luroblesf.github.io/wdd230/chamber/images/disagro.webp",
+      "membership": "Silver"
     }
   ]
-}
+}  
