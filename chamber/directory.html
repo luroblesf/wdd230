@@ -23,7 +23,7 @@
 
     <header> 
         <button id="menu"></button>
-         <nav class="navigation">  
+         <nav class="d">  
             <a href="index.html" title="Home">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
@@ -34,17 +34,16 @@
     </header>
 
     <main>
-        <section class="intro-section">
-            <h1>Members Directory</h1>
-        </section>
-
-        <section class="views-button-section">
-            <button role="button" id="grid-view">Grid view</button>
-            <button role="button" id="list-view">List view</button>
-        </section>
-
-        <section class="member-card-section">
-            
+        <div>
+            <h1>Directory</h1>
+        </div>
+        <section class="directory">
+        <h2>Business Members</h2>
+            <div class="button-menu">
+                <button id="gridBtn">Grid</button>
+                <button id="listBtn">List</button>
+            </div>
+            <article id="cards" class="grid"></article>    
         </section>
     </main>
 
@@ -67,5 +66,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/numberVisits.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>

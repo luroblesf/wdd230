@@ -50,7 +50,7 @@ img {
     width: auto;
     max-width: 325px;
     box-shadow: 0 0 30px #777;
-    height: 200px;
+    height: 400px;
     filter: drop-shadow(5px 5px 5px #555);
     margin: 10px;
 }
