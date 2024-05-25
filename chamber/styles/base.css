@@ -678,6 +678,7 @@ table tr:nth-child(even) {
 /* Directory */
 #cards section > h2 {
     margin: 5px;
+    color: #134266;
 }
 #cards section > p {
     margin: 5px;
@@ -686,6 +687,8 @@ table tr:nth-child(even) {
     max-width: 90px;
     height: 50px;
     margin: 50px;
+    shape-margin: 5px;
+    filter: drop-shadow(3px 3px 3px gray);
 }
 #directory {
     margin: 2rem;
@@ -730,7 +733,7 @@ table tr:nth-child(even) {
     padding: 0.35rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    color: var(--text-color-main);
+    color: black;
     height: 310px;
 }
 
