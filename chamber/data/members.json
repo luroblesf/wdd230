@@ -51,7 +51,7 @@
       "phone": "(502) 2420 3000",
       "website": "https://www.corporacionbi.com/gt/bancoindustrial/",
       "imageurl": "images/bi.webp",
-      "membershipLevel": "Gold Membership",
+      "membership": "Gold Membership",
       "since": "Since 2003"
     },
     {
@@ -60,7 +60,7 @@
       "phone": "(502) 2475-5136",
       "website": "https://www.facebook.com/zapateriasDilson/",
       "imageurl": "images/incad.webp",
-      "membershipLevel": "Bronze Membership",
+      "membership": "Bronze Membership",
       "since": "Since 1988"
     }
   ]
