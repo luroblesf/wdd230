@@ -1,12 +1,12 @@
 {
   "members": [
     {
-      "company": "Agrocentro S.A.",
-      "address": "14 calle 3-01 zona 9",
-      "phone": "(502)2381-2381",
+      "name": "Agrocentro S.A.",
+      "birthdate": "14 calle 3-01 zona 9",
+      "birthplace": "(502)2381-2381",
       "website": "https://www.agrocentro.com",
-      "logo": "https://luroblesf.github.io/wdd230/chamber/images/agrocentro.webp",
-      "membership": "Silver"
+      "imageurl": "https://luroblesf.github.io/wdd230/chamber/images/agrocentro.webp",
+      "lastname": "Silver"
     },
     {
       "name": "Disagro Guatemala S.A.",
@@ -15,6 +15,46 @@
       "website": "https://www.disagro.com",
       "imageurl": "https://luroblesf.github.io/wdd230/chamber/images/disagro.webp",
       "membership": "Silver"
+    },
+    {
+      "name": "Lucalza",
+      "address": "Kilómetro 27 carretera al Pacífico, Amatitlán",
+      "phone": "(502)) 6628-9100",
+      "website": "https://www.lucalza.com",
+      "imageurl": "images/lucalza.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Fundap",
+      "address": "3ra. Calle 15-16, zona 1",
+      "phone": " (502) 7794-2300",
+      "website": "https://www.fundap.com.gt/",
+      "imageurl": "images/fundap.webp",
+      "membership": "Non-Profit"
+    },
+    {
+      "name": "RC Quimica",
+      "address": "4a. avenida 0-55 zona 8 de Mixco, sector B-5, Ciudad San Cristobal",
+      "phone": "(502) 2381-0202",
+      "website": "https://www.rcquimica.com",
+      "imageurl": "images/rc-quimica.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Banco Industrial A.A.",
+      "address": "Vía 5, 5-34 zona 4 Centro Financiero Torre 3 Nivel 4",
+      "phone": "(502) 2420 3000",
+      "website": "https://www.corporacionbi.com/gt/bancoindustrial/",
+      "imageurl": "images/bi.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Incad",
+      "address": "7a. calle 11-79 zona 7, colonia Quinta Samayoa",
+      "phone": "(502) 2475-5136",
+      "website": "https://www.facebook.com/zapateriasDilson/",
+      "imageurl": "images/incad.webp",
+      "membershipLevel": "Bronze"
     }
   ]
-}  
+}
