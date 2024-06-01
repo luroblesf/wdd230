@@ -69,13 +69,21 @@
             </div>
         </section>
 
+        <section>
+            <div id="attendBanner" class="attend-banner">
+                <div>
+                    <strong>ANNOUNCEMENT: </strong>You are invited to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.
+                    <button class="close-button" onclick="closeBanner()">Close</button>      
+                </div>
+            </div>
+        </section>
+        
         <section class="weather">
             <h1>Local Weather</h1>
             <div class="weather-info">
                 <article id="weather">
                     <h3>Weather Right Now</h3>
                     <p id="location"></p>
-           
                     <figure>
                         <div class="temp-area">
                         <figure id="weather-description"></figure>
@@ -87,10 +95,44 @@
                         <div class="weather-box">Humidity:  <span id="humidity"></span></div>
                         <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
                     </div>
+                    <h3>Forecast Next 3 days</h3>
+                    <section class="weatherDays" id="weather-forecast">
+                        <div>
+                            <h4><span id="forecast-day-1"></span> </h4>
+                            <h4><span id="forecast-temp-1"></span> </h4>
+                            <figure>
+                                <img id="weather-icon1" class="w-icon" alt="weather icon">
+                                <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-2"></span> </h4>
+                            <h4><span id="forecast-temp-2"></span> </h4>
+                            <figure>
+                                <img id="weather-icon2" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-3"></span> </h4>
+                            <h4><span id="forecast-temp-3"></span> </h4>
+                            <figure>
+                                <img id="weather-icon3" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                </section>
                 </article>
             </div>
          </section>   
-        
+         <div>
+         <section class="directory"><br>
+            <article id="cards" class="grid"></article>    
+        </section>
+
+        </div>
+
 
         <section class="spotlights"> 
             <h1>Advertising</h1>
@@ -118,8 +160,9 @@
     </footer>
 
     </div>  
-</div>
+</div> 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
+   
 </body>
 </html>

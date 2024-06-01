@@ -17,25 +17,23 @@ header {
     grid-template-columns: 150px auto;
     display: flex;
 }
-
 #content {
     max-width: 1000px;
     margin: 0 auto;
 }
 .logo {
-    width: 300px;
-    height: 150px;
-    padding-top: 5px;
-    justify-self: right;
-    align-self: center;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin: 15px;
 }
 nav a {
-    color: #134266;
-    background: white;
+    color: white;
+    background: #134266;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
-    margin: 40px;
+    padding: 1.5em;
+    margin: 3rem;
     border-radius: 15px;
 }
 nav {    
@@ -43,7 +41,7 @@ nav {
     justify-content:left;
 }
 nav a:hover {
-    background-color:#134266;
+    background-color: green;
     color: #ffffff;
 }
 
@@ -169,73 +167,6 @@ h1 {
     margin-top: 1px;
 }
 
-
-/* Weather */
-.weather {
-    width: 100%;
-    border-radius: 1.7rem;
-    border-color: #134266;
-    background-color: rgb(204, 203, 203);
-    margin-top: 80px;
-}
-#weather h3, #five-day h3 {
-    margin: 0;
-    padding: 15px;
-    background-color: #FCE172;
-    color: #134266;
-    text-align: center;
-}
-#weather p {
-    margin: 10px 0 0 0;
-    text-align: center;
-}
-#weather figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
-.temp-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#current-temp {
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-.temp-area figure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-}
-#weather-description {
-    font-size: 1.3rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-.alt-weather {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    gap: 5px;
-}
-.weather-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    padding: 15px;
-    font-size: 1.3rem;
-    
-}
-.weather-box span {
-    font-weight: 800;
-    font-size: 1.3rem;
-}
 
 /* Spotlights */
 .spotlights {
@@ -810,4 +741,127 @@ table tr:nth-child(even) {
 .list section:nth-child(even) a.dark-mode {
     background-color: #e5e6e7;
     color: var(--text-color-main);
+}
+
+
+/* Weather */
+.weather {
+    width: 100%;
+    border-radius: 1.7rem;
+    border-color: #134266;
+    background-color: rgb(204, 203, 203);
+    margin-top: 80px;
+}
+#weather h3, #five-day h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #134266;
+    color: white;
+    text-align: center;
+}
+#weather p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#weather figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.temp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#current-temp {
+    font-size: 2rem;
+    font-weight: 80rem;
+    padding: 0.5rem;
+}
+.temp-area figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+#weather-description {
+    font-size: 1.6rem;
+    font-weight: 80rem;
+    text-transform: uppercase;
+}
+
+/* Discovery weather*/
+.alt-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 15px;
+    font-size: 1rem;
+    
+}
+.weather-box span {
+    font-weight: 800;
+    font-size: 1rem;
+}
+/* 3 days */
+.weather  h4{
+    margin-top: 5px;
+    text-align: center;
+}
+.weatherDays {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+#forecast-day-1 {
+    padding: 125px;
+    margin: 10px;
+}
+
+#forecast-day-2 {
+    padding: 125px;
+    margin: 10px;
+}
+
+#forecast-day-3 {
+    padding: 125px;
+    margin: 10px;
+}
+.weatherDays h4{
+    text-align: center;
+}
+
+/* Banner */
+.attend-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #0096ed;
+    color: white;
+    padding: 10px 25px;
+    position: fixed;
+    top: 0;
+    width: 81%;
+}
+  
+.close-button {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    margin-left: 62px;
 }
