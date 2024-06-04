@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
     <meta property="og:title" content="Quetzaltenango - Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://luroblesf.github.io/wdd230/chamber/images/xela.jpg">
@@ -40,7 +43,7 @@
                     <h2 class="h2">COMING EVENTS</h2><picture>
                     <source srcset="images/tikal-small.webp" media="(max-width: 200px)">
                     <img class="card-img" src="images/tikal.webp" alt="Tikal National Park" loading="lazy" width="450" height="300"></picture>
-                    <h3 class="h3">ROAD-TRIP IN GUATEMALA: <br>TIKAL, LAKE ISABAL, W/MOD.HIKES</h3>
+                    <h3>ROAD-TRIP IN GUATEMALA: <br>TIKAL, LAKE ISABAL, W/MOD.HIKES</h3>
                     <p>Thu, May 12, 10:00 AM <br>Tikal National Park<br>From $180</p><br>
                 </div>
                 <br>            
@@ -62,7 +65,7 @@
                         <table class="curr"> 
                             <tbody> 
                                 <tr><td class="nil"></td><td class="nil"></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr> 
-                                <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="today">10</td><td>11</td></tr> 
+                                <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr> 
                                 <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr> 
                                 <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr> 
                                 <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="nil"></td></tr> 
@@ -73,37 +76,42 @@
 
                 <div>
                     <h2 class="h2">INFORMATION</h2>
-                    <h3 class="h3">Quetzaltenango City</h3>
+                    <h3 class="city">Quetzaltenango City</h3><br>
                     <p>From 1838 to 1840 Quetzaltenango was the capital of the state of Los Altos, one of the states or provinces of the Federal Republic of Central America. As the union broke up, the army of Rafael Carrera conquered Quetzaltenango making it part of Guatemala. In 1850, the city had a population of approximately 20,000.
                        During the 19th century, coffee was introduced as a major crop in the area. As a result, the economy of Xela prospered. Much fine Belle Époque architecture can still be found in the city.</p><br>
                 </div>
 
                 <div>
                     <h2 class="h2">CLIMATE</h2>
-                    <h3 class="h3">Information</h3>
-            
-                    <div class="weather-info">
-                            <div id="weather">
+                    <section class="weather">
+                        <div class="weather-info">
+                            <article id="weather"><br>
                                 <p id="location"></p>
-                                <div class="temp-area">
+                                <figure>
+                                    <div class="temp-area">
                                     <figure id="weather-description"></figure>
-                                </div>
-                                <div class="alt-weather">
-                                    <div class="weather-box">Feels Like:  <span id="feels-like"></span></div>
-                                    <div class="weather-box">Humidity:  <span id="humidity"></span></div>
-                                    <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
-                                </div>  
+                                    </div>
+                                </figure>
+                            </article>
+                            <div class="alt-weather">
+                                <div class="weather-box">Feels Like:  <span id="feels-like"></span></div>
+                                <div class="weather-box">Humidity:  <span id="humidity"></span></div>
+                                <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
                             </div>
-                    </div><br>
-                
-                    <h2 class="h2">VISITS</h2>
-                    <h3 class="h3">Information</h3>     
-                    <h4>HI! <span class="visits"></span></h4>
-                    
+                        </div><br>
+                    </section>
+                </div>    
+                    <section class="visit-txt">
+                        <h2>VISITS</h2>
+                            <h3>Information</h3>     
+                                <h4>HI! <span class="visits"></span></h4>
+                    </section>
                 </div>
 
-                <ul class="list"></ul>
-            </div>
+                <div>
+                    <ul class="list"></ul>
+                </div>
+                
             <div class="content">
                 <div>
                     <h2 class="h2">PLACES TO VISIT</h2>
@@ -151,7 +159,6 @@
         <div class="copyupdated">
             <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
             <p><span id="lastModified"></span></p>
-            <p><a href="#">Contact Us</a></p>
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
             </a>
