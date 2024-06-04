@@ -63,12 +63,11 @@ html {
   }
 
   nav a {
-    color: white;
-    background: #134266;
+    color: #134266;
     text-align: center;
-    text-decoration: none;
-    padding: 0.6em;
-    margin: auto;
+    text-decoration: underline;
+    margin: 30px;
+    padding: 8px;
     border-radius: 15px;
   }
   nav {    
@@ -76,8 +75,10 @@ html {
     gap: 50%;
   }
   nav a:hover {
-    background-color: green;
+    background-color: #134266;
     color: #ffffff;
+    margin: 30px;
+    padding: 8px;
   }
   
   #menuBtn {
