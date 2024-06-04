@@ -21,169 +21,165 @@
     <meta property="og:url" content="https://luroblesf.github.io/chamber/index.html">
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body> 
-    <div id="content">
+<body>
 
-    <header> 
+      <header>
         <button id="menu"></button>
          <nav class="navigation">  
             <a href="index.html" title="Home">Home</a>
             <a href="discover.html" title="Discover">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
-            <img class="logo" src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" width="300" height="150">
         </nav>
-    </header>
+        <div id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <div id="hero">
-            <div id="heroBox">
-                <source srcset="images/xela-small.webp" media="(max-width: 400px)">
-                <source srcset="images/xela-medium.webp" media="(max-width: 800px)">
-                <img id="heroPic" src="images/xela.webp" alt="Quetzaltenango City" loading="lazy" width="1023" height="678">
-                
+        <div class="logo">
+            <img src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" />
+          </div>
+      </header>
+    
+     
+      <main>
+        <section id="hero">
+          <h1>Entrepreneurs with Vision</h1>
+          <h4>Loyalty, Trust and Service</h4>
+          <a href="join.html">Join Us</a>
+        </section>
+
+        <section id="events">
+            <h1>Current Event</h1>
+            <hr>
+            <div>
+              <div class="event">
+                <img src="images/tikal.jpg" alt="Tikal National Park">
+                <h4>ROAD-TRIP IN GUATEMALA: TIKAL, LAKE ISABAL, W/MOD.HIKES</h4>
+                <p>Thu, May 12, 10:00 AM <br>Tikal National Park<br>From $180</p>
+              </div>
+              <div class="event">
+                <img src="images/construction.jpg" alt="Construction Event" width="260">
+                <h4>EXPO CONSTRUCTION GUATEMALA 2024</h4>
+                <p>Thu, May 23, 7:30 AM<br>The Westin Camino Real<br>From $50</p>
+              </div>
+              <div class="event">
+                <img src="images/meditation.jpg" alt="Career Empowerment" width="260">
+                <h4>FREE CAREER EMPOWERMENT & MEDITATION CLASS</h4>
+                <p>Thu, May 23, 6:30 PM<br>Online by Zoom<br>From $0</p>
+              </div>
             </div>
-            <section id="heroMessage">
-                <h1 class="homeTitle">Entrepreneurs with Vision</h1>
-                <h4>Loyalty, Trust and Service</h4>
-                    <div class="buttonbox">
-                    <a class="book" href="join.html">Join Us</a>
-                    </div>
-            </section>
-    </div>
+          </section>
 
-    <div>
+          <section>
+            <div id="attendBanner" class="attend-banner">
+                <div>
+                    <p>ANNOUNCEMENT: You are invited to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</p><br>
+                    <button class="close-button" onclick="closeBanner()">Close</button>      
+                </div>
+            </div>
+        </section>
 
-        <main>
-            <section class="text">
-                <h1>Current Event</h1>
-                <br>
-                <div class="eventOne">
-                    <img src="images/tikal.jpg" alt="Tikal National Park">
-                    <h3>ROAD-TRIP IN GUATEMALA: TIKAL, LAKE ISABAL, W/MOD.HIKES</h3>
-                    <p>Thu, May 12, 10:00 AM <br>Tikal National Park<br>From $180</p>
-                </div>
-                <div class="eventTwo">
-                    <img src="images/construction.jpg" alt="Construction Event" width="260">
-                    <h3>EXPO CONSTRUCTION GUATEMALA 2024</h3>
-                    <p>Thu, May 23, 7:30 AM<br>The Westin Camino Real<br>From $50</p>
-                </div>
-                <div class="eventThree">
-                    <img src="images/meditation.jpg" alt="Career Empowerment" width="260">
-                    <h3>FREE CAREER EMPOWERMENT & MEDITATION CLASS</h3>
-                    <p>Thu, May 23, 6:30 PM<br>Online by Zoom<br>From $0</p>
-                </div>
-            </section>
-
-            <section>
-                <div id="attendBanner" class="attend-banner">
-                    <div>
-                        <p>ANNOUNCEMENT: You are invited to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</p><br>
-                        <button class="close-button" onclick="closeBanner()">Close</button>      
-                    </div>
-                </div>
-            </section>
-            
-            <section class="weather">
-                <h1>Local Weather</h1>
-                <div class="weather-info">
-                    <article id="weather"></article>
-                        <p id="location"></p>
-                        <figure>
-                            <div class="temp-area">
-                            <figure id="weather-description"></figure>
-                            </div>
-                        </figure>
-
-                        <div class="alt-weather">
-                            <div class="weather-box">Feels Like:  <span id="feels-like"></span></div>
-                            <div class="weather-box">Humidity:  <span id="humidity"></span></div>
-                            <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
+          
+          <section class="weather">
+            <h1>Local Weather</h1>
+            <div class="weather-info">
+                <article id="weather"></article>
+                    <p id="location"></p>
+                    <figure>
+                        <div class="temp-area">
+                        <figure id="weather-description"></figure>
                         </div>
-                        <h3 class="name-weather">Forecast Next 3 days</h3>
-                        <section class="weatherDays" id="weather-forecast">
-                            <div>
-                                <h4><span id="forecast-day-1"></span> </h4>
-                                <h4><span id="forecast-temp-1"></span> </h4>
-                                <figure>
-                                    <img id="weather-icon1" class="w-icon" alt="weather icon">
-                                    <figcaption id="fig2" class="weather-fig-captions"></figcaption>
-                                </figure>
-                            </div>
-                            <div>
-                                <h4><span id="forecast-day-2"></span> </h4>
-                                <h4><span id="forecast-temp-2"></span> </h4>
-                                <figure>
-                                    <img id="weather-icon2" class="w-icon" alt="Weather Icon">
-                                    <figcaption id="fig3" class="weather-fig-captions"></figcaption>
-                                </figure>
-                            </div>
-                            <div>
-                                <h4><span id="forecast-day-3"></span> </h4>
-                                <h4><span id="forecast-temp-3"></span> </h4>
-                                <figure>
-                                    <img id="weather-icon3" class="w-icon" alt="Weather Icon">
-                                    <figcaption id="fig4" class="weather-fig-captions"></figcaption>
-                                </figure>
-                            </div>
-                        </section>
+                    </figure>
+
+                    <div class="alt-weather">
+                        <div class="weather-box">Feels Like:  <span id="feels-like"></span></div>
+                        <div class="weather-box">Humidity:  <span id="humidity"></span></div>
+                        <div class="weather-box">Wind:  <span id="wind-speed"></span></div>
+                    </div><br>
+                    <h3 class="name-weather">Forecast Next 3 days</h3>
+
+                    <section class="weatherDays" id="weather-forecast">
+                        <div>
+                            <h4><span id="forecast-day-1"></span> </h4>
+                            <h4><span id="forecast-temp-1"></span> </h4>
+                            <figure>
+                                <img id="weather-icon1" class="w-icon" alt="weather icon">
+                                <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-2"></span> </h4>
+                            <h4><span id="forecast-temp-2"></span> </h4>
+                            <figure>
+                                <img id="weather-icon2" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <h4><span id="forecast-day-3"></span> </h4>
+                            <h4><span id="forecast-temp-3"></span> </h4>
+                            <figure>
+                                <img id="weather-icon3" class="w-icon" alt="Weather Icon">
+                                <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+                            </figure>
+                        </div>
                     </section>
-                    </article>
-                </div>
-            </section>   
-            <div>
-
-
+                </section>
+                </article>
             </div>
-            <section class="spotlights"> 
-                <h1>Advertising</h1>
-                                
-                <div class="advertising">
-                    <source srcset="images/ad-one-small.webp" media="(max-width: 200px)">
-                    <source srcset="images/ad-one-medium.webp" media="(max-width: 400px)">
-                    <img src="images/ad-one.webp" alt="Quetzaltenango City" loading="lazy" width="800" height="418">
-                </div>
-                <div class="advertising">
-                    <source srcset="images/ad-three-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/ad-three-medium.webp" media="(max-width: 800px)">
-                    <img src="images/ad-three.webp" alt="Yaxha National PArk" loading="lazy" width="1200" height="1200">
-                </div>
-                <div class="advertising">
-                    <source srcset="images/ad-two-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/ad-two-medium.webp" media="(max-width: 800px)">
-                    <img src="images/ad-two.webp" alt="Spirit Prom" loading="lazy" width="1200" height="630">    
-                </div>
-            </section>
+        </section>   
 
-
-            <div>
-                <br>
-                <h1>Spotlights</h1>
-            </div>
+        <section id="joinUs">
+            <h1>Spotlights</h1>
+            <hr>
             <section class="directory"><br>
                 <article id="cards" class="grid"></article>    
             </section>
-        </main>
+          </section>
 
-        <footer>
-            <div class="copyupdated">
-                <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
-                <p><span id="lastModified"></span></p>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitterx-icon.png" alt="TwitterX icon" width="30" height="30">
-                </a>
-            </div>
-        </footer>
+        <section id="awards">
+          <h1>Advertising</h1>
+          <hr>
+          <div>
+            <div class="features">
+                <source srcset="images/ad-one-small.webp" media="(max-width: 200px)">
+                <source srcset="images/ad-one-medium.webp" media="(max-width: 400px)">
+                <img src="images/ad-one.webp" alt="Quetzaltenango City" loading="lazy">
+                </div>
+                <div class="features">
+                    <source srcset="images/ad-three-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/ad-three-medium.webp" media="(max-width: 800px)">
+                    <img src="images/ad-three.webp" alt="Yaxha National PArk" loading="lazy" >
+                </div>
+                <div class="features">
+                    <source srcset="images/ad-two-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/ad-two-medium.webp" media="(max-width: 800px)">
+                    <img src="images/ad-two.webp" alt="Spirit Prom" loading="lazy">    
+                </div>
+          </div>
+        </section>
+      
+      </main>
+    
 
-        </div>  
-    </div> 
+    <footer>
+        
+        <div class="copyupdated">
+            <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
+            <p><span id="lastModified"></span></p>
+            <a href="https://facebook.com" target="_blank">
+              <img src="images/fb.webp" alt="Fb icon" loading="lazy">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.webp" alt="TwitterX icon" loading="lazy">
+          </a>
+    </footer>
+
     <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/numberVisits.js"></script>
     <script src="scripts/members.js"></script>
-    
-   
+
 </body>
 </html>

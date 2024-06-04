@@ -21,116 +21,118 @@
     <meta property="og:url" content="https://luroblesf.github.io/chamber/index.html">
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body> 
-    <div id="content">
+<body>
 
-    <header> 
+      <header>
         <button id="menu"></button>
          <nav class="navigation">  
             <a href="index.html" title="Home">Home</a>
-            <a href="discover.html">Discover</a>
+            <a href="discover.html" title="Discover">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
         </nav>
-        <img class="logo" src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" width="300" height="150">
+        <div id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    </header>
-    <br><h1>Join Us</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" />
+          </div>
+      </header>
+    
+     
     <main>
-            <div class="form-mode">
-                <div>
-                    <form method="get" action="thankyou.html" class="f1" id="form">
-                        <fieldset>
-                            <legend>Applicant Information</legend>
-                            <label>First Name* <input type="text" name="fname" id="name" required></label>
-                            <label>Last Name* <input type="text" name="lname" id="last" required></label>
-                            <label>Title of Position <input type="text" name="position" id="position" placeholder="Minimum of 7 characters "></label>
-                            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" pattern="[a-zA-Z0-9._%+-]" title="Please enter a valid email address" required></label>
-                            <label>Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
-                        </fieldset>
-            
-                        <fieldset>
-                            <legend>Membership Levels</legend>
-                            <label><input type="radio" name="audience" value="no-membership">NP Membership</label>
-                            <label><input type="radio" name="audience" value="bronze-membership">Bronze Membership</label>
-                            <label><input type="radio" name="audience" value="silver-membership">Silver Membership</label>
-                            <label><input type="radio" name="audience" value="gold-membership">Gold Membership</label>
-                        </fieldset>
-        
-                        <fieldset>
-                            <legend>Business/Organization</legend>
-                            <label>Business/Organization's Name* <input type="text" name="company" id="organization" required></label>
-                            <label class="f2">Description <textarea id="description" name="description" ></textarea></label>  
-                     
-                        </fieldset>
-
-                        <input type="hidden" name="timeStamp" id="datetime">
-                        <button type="submit" id="submit" onclick="testInfo">Send</button>
-                    </form>
-                    <p id="output"></p>
-                </div>
-
+        <div class="form-mode">
             <div>
-                <div class="list">
-                        <table class="two">
-                            <thead>
-                                <tr>
-                                    <th>Membership Levels</th>
-                                    <th>Cost</th>
-                                    <th>Benefit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>NP MEMBERSHIP</td>
-                                    <td>No fee</td>
-                                    <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
-                                </tr>
-                                <tr>
-                                    <td>BRONZE</td>
-                                    <td>$50</td>
-                                    <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
-                                </tr>
-                                <tr>
-                                    <td>SILVER</td>
-                                    <td>$100</td>
-                                    <td>• Semi-annual training<br>• Advertising on social networks<br>• 15% discount on tickets to events</td>
-                                </tr>   
-                                <tr>
-                                    <td>GOLD</td>
-                                    <td>$175</td>
-                                    <td>• Quarterly training<br>• Advertising on social networks and chamber of commerce events<br>• 20% discount on tickets to events</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <picture class="img3">
-                            <source srcset="images/join-small.webp" media="(max-width: 323px)">
-                            <source srcset="images/join-medium.webp" media="(max-width: 485px)">
-                            <img src="images/join.webp" alt="Join Us" loading="lazy" width="970" height="780">
-                        </picture>
-                </div>
+                <form method="get" action="thankyou.html" class="f1" id="form">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label>First Name* <input type="text" name="fname" id="name" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="last" required></label>
+                        <label>Title of Position <input type="text" name="position" id="position" placeholder="Minimum of 7 characters "></label>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" pattern="[a-zA-Z0-9._%+-]" title="Please enter a valid email address" required></label>
+                        <label>Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Membership Levels</legend>
+                        <label><input type="radio" name="audience" value="no-membership">NP Membership</label>
+                        <label><input type="radio" name="audience" value="bronze-membership">Bronze Membership</label>
+                        <label><input type="radio" name="audience" value="silver-membership">Silver Membership</label>
+                        <label><input type="radio" name="audience" value="gold-membership">Gold Membership</label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Business/Organization</legend>
+                        <label>Business/Organization's Name* <input type="text" name="company" id="organization" required></label>
+                        <label class="f2">Description <textarea id="description" name="description" ></textarea></label>  
+                 
+                    </fieldset>
+
+                    <input type="hidden" name="timeStamp" id="datetime">
+                    <button type="submit" id="submit" onclick="testInfo">Send</button>
+                </form>
+                <p id="output"></p>
+            </div>
+
+        <div>
+            <div class="list">
+                    <table class="two">
+                        <thead>
+                            <tr>
+                                <th>Membership Levels</th>
+                                <th>Cost</th>
+                                <th>Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NP MEMBERSHIP</td>
+                                <td>No fee</td>
+                                <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
+                            </tr>
+                            <tr>
+                                <td>BRONZE</td>
+                                <td>$50</td>
+                                <td>• Annual training<br>• Advertising on social networks<br>• 10% discount on tickets to events</td>
+                            </tr>
+                            <tr>
+                                <td>SILVER</td>
+                                <td>$100</td>
+                                <td>• Semi-annual training<br>• Advertising on social networks<br>• 15% discount on tickets to events</td>
+                            </tr>   
+                            <tr>
+                                <td>GOLD</td>
+                                <td>$175</td>
+                                <td>• Quarterly training<br>• Advertising on social networks and chamber of commerce events<br>• 20% discount on tickets to events</td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
         </div>
+    </div>
+      
     </main>
-
+    
 
     <footer>
+        
         <div class="copyupdated">
             <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
             <p><span id="lastModified"></span></p>
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
+                <img src="images/fb.webp" alt="Fb icon" loading="lazy">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitterx-icon.png" alt="TwitterX icon" width="30" height="30">
+                <img src="images/twitter.webp" alt="TwitterX icon" loading="lazy">
             </a>
-        </div>
     </footer>
-
-    </div>  
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/numberVisits.js"></script>
+    <script src="scripts/members.js"></script>
+
 </body>
 </html>

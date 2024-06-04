@@ -1,4 +1,4 @@
-/* Copyright year */
+ /* Copyright year */
 
 function getCopyrightYear() {
     const year = new Date().getFullYear();
@@ -14,15 +14,53 @@ function getLastModified() {
 }
 document.getElementById("lastModified").innerHTML = getLastModified();
 
-/* Hamburger Menu */
 
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+WebFont.load({
+    google: {
+      families: ["Inter", "Montserrat"],
+    },
+  });
+  
+  const banner = document.getElementById("banner");
+  const closeBannerBtn = document.getElementById("closeBanner");
+  
+  // Navbar Logic
+  const navBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const mobileMenu = document.getElementById("menu");
+  
+  function toggleMenu() {
+    mobileMenu.classList.toggle("show-menu");
+  }
+  
+  navBtn.addEventListener("click", toggleMenu);
+  closeBtn.addEventListener("click", toggleMenu);
+  
+  // Store alerts
+  let alerts;
+  
+  function handleAlerts() {
+    // Check for alerts
+    if (alerts) {
+      banner.classList.remove("hide");
+      const p = document.createElement("p");
+      p.textContent = alerts[0].description;
+      banner.appendChild(p);
+    } else {
+      banner.classList.add("hide");
+    }
+  }
+  
+  handleAlerts();
+  
+  closeBannerBtn.addEventListener("click", function () {
+    banner.classList.add("hide");
+  });
 
-hamButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    hamButton.classList.toggle("open");
-});
+
+
+
+
 
 /* Title Position */
 const form = document.querySelector("#form");
@@ -44,6 +82,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   testInfo(input);
 });
+
 
 /* TimeStamp */
 

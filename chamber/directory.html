@@ -21,22 +21,29 @@
     <meta property="og:url" content="https://luroblesf.github.io/chamber/index.html">
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body> 
-    <div id="content">
+<body>
 
-    <header> 
+      <header>
         <button id="menu"></button>
-         <nav class="d">  
+         <nav class="navigation">  
             <a href="index.html" title="Home">Home</a>
-            <a href="discover.html">Discover</a>
+            <a href="discover.html" title="Discover">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
         </nav>
-        <img class="logo" src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" width="300" height="150">
+        <div id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    </header>
-
-    <main>
+        <div class="logo">
+            <img src="images/logo.png" alt="Quetzaltenango Chamber of Commerce" />
+          </div>
+      </header>
+    
+     
+      <main>
         <div>
             <br>
             <h1>Directory</h1>
@@ -49,24 +56,24 @@
             <article id="cards" class="grid"></article>    
         </section>
     </main>
+    
 
     <footer>
+        
         <div class="copyupdated">
             <p><span id="currentYear"></span><br>Lucia Robles<br>WDD230 Site Project</p>
             <p><span id="lastModified"></span></p>
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook-icon.png" alt="Fb icon" width="30" height="30">
+                <img src="images/fb.webp" alt="Fb icon" loading="lazy">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitterx-icon.png" alt="TwitterX icon" width="30" height="30">
+                <img src="images/twitter.webp" alt="TwitterX icon" loading="lazy">
             </a>
         </div>
     </footer>
 
-    </div>  
-
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/numberVisits.js"></script>
     <script src="scripts/members.js"></script>
+
 </body>
 </html>

@@ -1,30 +1,39 @@
-@media screen and (max-width: 640px) {
-    #hero {
-        display: block;
-        height: auto;
+@media only screen and (min-width: 64rem) {
+    /* Current Weather */
+    #currentWeather {
+      padding-left: 7rem;
+      padding-right: 7rem;
     }
-    nav, footer {
-        flex-direction: column;
+  
+    /* Forecast */
+    .weather {
+      gap: 50px;
+      color: white;
     }
-    nav a {
-        display: block;
-        padding: 15px;
+  
+    /* Companies */
+    .companies > div {
+      width: 200px;
+      height: 200px;
+      margin: 0 3rem;
     }
-    #hero {
-        margin-top: 0;
+  
+    #contact > div {
+      grid-template-columns: 1fr 1fr;
     }
-    #hero-msg {
-        margin-top: 0;
+  
+    /* ------------ Directory Page ------------ */
+  
+    #directory {
+      padding-left: 4rem;
+      padding-right: 17rem;
     }
-    #hero-msg h4 {
-        display: none;
+  
+    #businesses .card > div div img {
+      max-width: 10rem;
     }
-
-    #background {
-        display: none;
+  
+    #businesses.grid .card > div div img {
+      max-width: 7rem;
     }
-    footer {
-        margin-top: 25px;
-    }
-    
-}
+  }
