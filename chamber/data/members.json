@@ -5,7 +5,7 @@
         "address": "14 street 3-01 zone 9",
         "phone": "(502) 2381-2381",
         "website": "https://www.agrocentro.com",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/agrocentro.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/agrocentro.webp",
         "membership": "Silver Membership",
         "since": "Since 2015"
       },
@@ -14,7 +14,7 @@
         "address": "Beltway 17-36 zone 11",
         "phone": "(502) 2474-9300",
         "website": "https://www.disagro.com",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/disagro.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/disagro.webp",
         "membership": "Gold Membership",
         "since": "Since 2017"
       },
@@ -23,7 +23,7 @@
         "address": "Kilometer 27, Pacific Road, Amatitlan",
         "phone": "(502) 6628-9100",
         "website": "https://www.lucalza.com",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/lucalza.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/lucalza.webp",
         "membership": "Bronze Membership",
         "since": "Since 1999"
       },
@@ -32,7 +32,7 @@
         "address": "3th Street 15-16 zone 1",
         "phone": "(502) 7794-2300",
         "website": "https://www.fundap.com.gt",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/fundap.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/fundap.webp",
         "membership": "NP-Membership",
         "since": "Since 1995"
       },
@@ -41,7 +41,7 @@
         "address": "4th Avenue 0-55 zone 8",
         "phone": "(502) 2381-0202",
         "website": "https://www.rcquimica.com",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/rc-quimica.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/rc-quimica.webp",
         "membership": "Gold Membership",
         "since": "Since 2023"
       },
@@ -50,7 +50,7 @@
         "address": "5th Way 5-34 zone 4, Tower 3 Level 4 Financial Center",
         "phone": "(502) 2420-3000",
         "website": "https://www.bi.org.gt",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/bi.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/bi.webp",
         "membership": "Gold Membership",
         "since": "Since 2003"
       },
@@ -59,7 +59,7 @@
         "address": "7th Street 11-79 zone 7",
         "phone": "(502) 2475-5136",
         "website": "https://www.incad.org",
-        "img": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/incad.webp",
+        "imageurl": "https://github.com/luroblesf/wdd230/blob/main/chamber/images/incad.webp",
         "membership": "Bronze Membership",
         "since": "Since 1988"
       }
