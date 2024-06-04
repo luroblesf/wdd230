@@ -1,5 +1,4 @@
 @media only screen and (min-width: 35rem) {
-    /*----------- HEADER --------------*/
     header {
       padding: 0.35rem 1rem;
     }
@@ -36,7 +35,7 @@
       font-size: 1rem;
     }
   
-    /*----------- FOOTER --------------*/
+    /* Footer*/
   footer {
     font-family: 'Lato', sans-serif;
     background-color: #fefefe;
@@ -63,8 +62,12 @@ footer p a:hover {
     text-decoration:solid;
 }  
 footer a:hover {
-    background-color: #217B1A;
-    color:white;
+  background-color: white;
+  color:white;
+}
+footer img {
+  width: 25%;
+  height: auto;
 }
 
 .copyupdated {
@@ -73,7 +76,7 @@ footer a:hover {
     align-items: center;
     gap: 80px; 
 }
-    /*----------- MAIN --------------*/
+    /* Main */
     #hero a {
       padding: 1% 3rem;
       border-radius: 50px;
@@ -95,20 +98,7 @@ footer a:hover {
       color: white;
     }
   
-    /* Forecast */
-    .forecast-box {
-      gap: 80px;
-      color: white;
-    }
-  
-    /* Companies */
-    .companies > div {
-      width: 150px;
-      height: 150px;
-      margin: 0 2rem;
-    }
-  
-    /* Why Join Us */
+   
     #joinUs > div {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -121,35 +111,4 @@ footer a:hover {
       grid-template-columns: repeat(3, 1fr);
     }
   
-    /*------------  FORM  -------------*/
-    form fieldset,
-    #benefits,
-    #contact-info {
-      max-width: 80%;
-    }
-  
-    form label.top input,
-    form label.top select,
-    form label.top textarea {
-      max-width: 100%;
-    }
-  
-    /* ------------ Directory Page ------------ */
-  
-    #controls {
-      display: flex;
-    }
-  
-    #businesses {
-      padding: 0.3rem 1rem;
-    }
-  
-    #businesses p {
-      font-size: 0.9rem;
-    }
-  
-    #businesses.grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-    }
-}
+  }
